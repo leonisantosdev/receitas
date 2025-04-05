@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  width: 20.125rem;
+
+}
+
+.containerImg {
+  overflow: hidden;
+
+  & .containerImg img {
+    vertical-align: top;
+    max-width: 100%;
+  }
+}
+
+
+
+.containerText {
+  padding: 1rem;
+
+  & h2 {
+    font-size: 1.125rem;
+  }
+
+  & p {
+    font-size: .875rem;
+  }
+
+  & .containerSpans {
+    display: flex;
+  }
+
+  & .containerSpans span {
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+.containerButton {
+  display: flex;
+}

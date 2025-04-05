@@ -1,0 +1,9 @@
+export async function getRecipes(): Promise<Recipe[]> {
+  try {
+    const response = await axios.get<Recipe[]>('https://api-receitas-pi.vercel.app/receitas/todas');
+    return response.data;
+
+  } catch (error) {
+    console.error('Error fetching recipes:', error);
+  }
+}
